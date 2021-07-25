@@ -1,0 +1,21 @@
+
+<div>
+    <h3 *ngIf= "muestra==false; else Noborrado"> Presione el boton de eliminar Heroe</h3>
+    
+    <ng-template #Noborrado> <h3> El heroe borrado fue: {{heroeBorrado}} </h3></ng-template>
+    
+    
+ 
+    </div> <br>
+    
+    <button (click)="borrarHeroe()">Elimina heroe</button>
+    
+
+<p>Listado de heroes</p>
+
+<ul>
+
+    <li *ngFor="let heroe of heroes">
+         {{heroe}}
+    </li>
+</ul>
